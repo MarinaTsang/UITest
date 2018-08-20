@@ -9,11 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:title="test toolbar"
-        app:titleTextColor="#FFF"
+        app:subtitle="小标题"
+        app:titleTextAppearance="@style/toolbarTitle"
+        app:subtitleTextAppearance="@style/toolbarSubtiltle"
         android:background="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_launcher_background"
-       android:paddingLeft="12dp"/>
+        app:navigationIcon="@drawable/invite_help_white"
+        android:paddingLeft="12dp"/>
 
 
     <!--test radio-->
@@ -69,7 +71,7 @@
         android:id="@+id/btn1"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:text="折叠toolbar"
         app:layout_constraintTop_toBottomOf="@+id/tv1"
         android:layout_marginTop="20dp"/>
 
@@ -78,7 +80,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/btn1"
-        android:text="2"
+        android:text="仿首页"
         app:layout_constraintLeft_toRightOf="@+id/btn1"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv1"

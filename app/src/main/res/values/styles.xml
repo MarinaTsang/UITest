@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -10,4 +10,15 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <!--修改toolbar 标题大小及颜色-->
+    <style name="toolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3CB371</item>
+
+    </style>
+<!-- 不能直接写 textSize ,必须是android:XXX-->
+    <style name="toolbarSubtiltle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">#236688</item>
+        <item name="android:textSize" tools:ignore="SmallSp">10sp</item>
+    </style>
 </resources>
